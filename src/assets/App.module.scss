@@ -1,0 +1,40 @@
+
+
+.album_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.album_column {
+  flex: 1;
+  margin: 0 10px;
+  position: relative;
+}
+
+.album_title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.photos {
+  margin-top: 10px;
+}
+
+.photo_item {
+  margin-bottom: 10px;
+}
+
+.photo_item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
