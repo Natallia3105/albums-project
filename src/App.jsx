@@ -26,12 +26,12 @@ function App() {
         <div className={styles.album_container}>
             {albums.slice(0, 3).map((album, index) => (
                 <div key={index} className={styles.album_column}>
-                    <h3 className={styles.album_title}>{album.title}</h3>
+                    {/*<h3 className={styles.album_title}>{album.title}</h3>*/}
                     <div className={styles.photos}>
                         {getPhotosByAlbumId(album.id).slice(0, 5).map((photo, index) => (
                             <div key={index} className={styles.photo_item}>
                                 <img src={photo.thumbnailUrl} alt={photo.title} />
-                                <p>{photo.title}</p>
+                                <p className={styles.title_item}>{photo.title}</p>
                             </div>
                         ))}
                     </div>
